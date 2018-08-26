@@ -1,3 +1,4 @@
-import React from 'react'
+import React from "react";
+import RootContainer from "../containers/RootContainer";
 
-export default () => <div>App.js</div>
+export default () => <RootContainer />;

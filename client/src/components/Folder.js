@@ -93,12 +93,12 @@ class Folder extends Component {
             if (item.type === "folder") return <Folder key={i} data={item} />;
             return (
               <MyContext.Consumer key={i}>
-                {({ incrementFileCount, updateFileSize }) => (
+                {({ addFile, updateTotalSize }) => (
                   <FileType
                     key={i}
                     data={item}
-                    incrementFileCount={incrementFileCount}
-                    updateFileSize={updateFileSize}
+                    incrementFileCount={addFile}
+                    updateFileSize={updateTotalSize}
                   />
                 )}
               </MyContext.Consumer>
