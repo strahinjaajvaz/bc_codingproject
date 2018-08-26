@@ -14,9 +14,9 @@ export class MyProvider extends React.Component {
       totalFiles: prevState.totalFiles + 1
     }));
 
-  updateTotalSize = () =>
+  updateTotalSize = (size) =>
     this.setState(prevState => ({
-      totalFilesSize: prevState.totalFilesSize + 1
+      totalFilesSize: prevState.totalFilesSize + size
     }));
 
   render() {
