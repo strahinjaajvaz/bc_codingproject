@@ -27,7 +27,7 @@ export default class extends Component {
 
   render() {
     if (this.state.fetching) return <p>Loading...</p>;
-    if (this)
+    if (this.state.error) return <p>There has been an error loading the data, please refresh.</p>
       return (
         <React.Fragment>
           {this.state.data.map((item, i) => {

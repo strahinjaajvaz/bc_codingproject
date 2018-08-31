@@ -2,8 +2,8 @@
  * 
  * https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-bytes-to-kb-mb-gb-in-javascript
  * 
- * @param {value you'd like to convert} bytes 
- * @param {precision} decimals 
+ * @param {string} bytes 
+ * @param {int} decimals 
  */
 
 export const formatBytes = (bytes, decimals) => {
